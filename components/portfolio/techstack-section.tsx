@@ -48,20 +48,27 @@ const techLogos: Record<string, string> = {
   "CI/CD": "/ci-cd-svgrepo-com.svg",
   "Vite": "/vite.svg",
   "Webpack": "/webpack-svgrepo-com.svg",
-  "Unit Testing": "/testing.svg",
-  "Integration Testing": "/testing.svg",
-  "E2E Testing": "/testing.svg",
+  "Claude":"/claude-ai-icon.svg",
+  "ChatGPT":"/chatgpt-icon.svg",
+  "Clerk":"/clerk-icon-light.svg",
+  "GitHub Copilot":"/copilot.svg",
+  "Cursor":"/cursor_light.svg",
+  "Cloudinary":"/cloudinary.svg",
+  "Redis":"/redis.svg",
+  "V0":"/V0_light.svg",
+  "Vercel":"/vercel.svg",
+  "Stripe":"/stripe.svg"
 }
 
 const categories: TechCategory[] = [
   {
     titleKey: "techStack.languages",
     items: [
-      { name: "JavaScript", rating: 5 },
       { name: "TypeScript", rating: 5 },
+      { name: "JavaScript", rating: 5 },
       { name: "Python", rating: 3 },
-      { name: "Java", rating: 2 },
-      { name: "C", rating: 2 },
+      { name: "Java", rating: 3 },
+      { name: "C", rating: 4 },
     ],
   },
   {
@@ -86,7 +93,7 @@ const categories: TechCategory[] = [
       { name: "REST APIs", rating: 5 },
       { name: "GraphQL", rating: 4 },
       { name: "Socket.io", rating: 4 },
-      { name: "Webhooks", rating: 3 },
+      { name: "Webhooks", rating: 4 },
     ],
   },
   {
@@ -96,6 +103,7 @@ const categories: TechCategory[] = [
       { name: "PostgreSQL", rating: 4 },
       { name: "MySQL", rating: 3 },
       { name: "Sequelize", rating: 4 },
+      { name: "Redis", rating: 3 },
     ],
   },
   {
@@ -110,11 +118,22 @@ const categories: TechCategory[] = [
     ],
   },
   {
-    titleKey: "techStack.testing",
+    titleKey: "techStack.Cloud_Services",
     items: [
-      { name: "Unit Testing", rating: 4 },
-      { name: "Integration Testing", rating: 4 },
-      { name: "E2E Testing", rating: 3 },
+      { name: "Cloudinary", rating: 4 },
+      { name: "Vercel", rating: 5 },
+      { name: "Stripe", rating: 4 },
+      { name: "Clerk", rating: 4 },
+    ],
+  },
+  {
+    titleKey: "techStack.AI",
+    items: [
+      { name: "Claude", rating: 5 },
+      { name: "ChatGPT", rating: 4 },
+      { name: "Cursor", rating: 4 },
+      { name: "V0", rating: 5 },
+      { name: "GitHub Copilot", rating: 3 },
     ],
   },
 ]

@@ -13,6 +13,7 @@ import {
   Github,
   Instagram,
   Twitter,
+  MailIcon,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useI18n } from "@/lib/i18n"
@@ -38,7 +39,7 @@ export function Sidebar({ activeSection }: SidebarProps) {
   return (
     <aside className="flex h-full flex-col  p-6">
       {/* Profile Card - Frosted Glass */}
-      <div className="flex flex-col items-center gap-4 rounded-2xl  bg-white/60 p-5 shadow-lg shadow-cyan-500/10 backdrop-blur-md dark:bg-gray-800/60">
+      <div className="flex flex-col items-center gap-4 rounded-2xl  bg-transparent p-4">
         <div className="relative">
           {/* NEW CODE - Profile Image */}
           <div className="relative h-28 w-28 overflow-hidden rounded-full ring-4 ring-primary bg-white/40 dark:bg-gray-700/40">
@@ -90,10 +91,12 @@ export function Sidebar({ activeSection }: SidebarProps) {
 
       {/* Download CV */}
       <div className="mt-4">
-        <Button className="w-full gap-2 shadow-md shadow-primary/20" size="default">
-          <Download className="h-4 w-4" />
-          {t("sidebar.downloadCv")}
-        </Button>
+        <a href="/Resume_Shoban_Shaikh.pdf" download="Shoban_Shaikh_CV.pdf">
+          <Button className="w-full gap-2 shadow-md shadow-primary/20" size="default">
+            <Download className="h-4 w-4" />
+            {t("sidebar.downloadCv")}
+          </Button>
+        </a>
       </div>
 
       {/* Spacer */}
@@ -105,7 +108,7 @@ export function Sidebar({ activeSection }: SidebarProps) {
           href="https://www.linkedin.com/in/shoban-shaikh-909231251/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group rounded-lg bg-white/30 max-md:text-white p-2.5 text-muted-foreground transition-all duration-300 ease-in-out hover:scale-110 hover:bg-[#0A66C2] hover:shadow-lg hover:shadow-[#0A66C2]/40 dark:bg-gray-800/30"
+          className="group rounded-lg bg-white/30 max-md:text-white p-2.5 text-muted-foreground transition-all duration-300 ease-in-out hover:scale-110 hover:bg-[#0A66C2] hover:shadow-lg hover:shadow-[#0A66C2]/40 dark:bg-gray-800/30 dark:hover:bg-gray-900"
           aria-label="LinkedIn"
         >
           <Linkedin className="h-4 w-4 transition-colors duration-300 group-hover:text-white" />
@@ -129,6 +132,14 @@ export function Sidebar({ activeSection }: SidebarProps) {
           {/* Instagram gradient overlay */}
           <span className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#F56040] via-[#E1306C] to-[#833AB4] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           <Instagram className="relative h-4 w-4 transition-colors duration-300 group-hover:text-white" />
+        </a>
+        <a
+          href="mailto:shobanshaikh273@gmail.com"
+          rel="noopener noreferrer"
+          className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+          aria-label="LinkedIn"
+        >
+          <Mail className="h-4 w-4" />
         </a>
       </div>
     </aside>

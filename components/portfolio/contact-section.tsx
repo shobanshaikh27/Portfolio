@@ -3,7 +3,7 @@
 import React from "react"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Linkedin, Github, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -140,18 +140,24 @@ export function ContactSection() {
                     </div>
                     +49 15510860646
                   </a>
-                  <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-                      <MapPin className="h-4 w-4 text-primary" />
+                  <a
+                    href="https://www.google.com/maps/place/Marburg/@50.7983666,8.6604135,12z/data=!3m1!4b1!4m6!3m5!1s0x47bc624340db29e9:0x422435029b0a8e0!8m2!3d50.8018843!4d8.7657677!16zL20vMGN5NDE?entry=ttu&g_ep=EgoyMDI2MDIwOC4wIKXMDSoASAFQAw%3D%3D"
+                    className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+                    target="_blank"
+                  >
+                    <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                        <MapPin className="h-4 w-4 text-primary" />
+                      </div>
+                      Marburg, Germany
                     </div>
-                    Marburg, Hesse, Germany
-                  </div>
+                  </a>
                 </div>
 
                 {/* Social quick links */}
                 <div className="mt-5 flex gap-3">
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/shoban-shaikh-909231251/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
@@ -160,7 +166,7 @@ export function ContactSection() {
                     <Linkedin className="h-4 w-4" />
                   </a>
                   <a
-                    href="https://github.com"
+                    href="https://github.com/shobanshaikh27"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
@@ -168,6 +174,16 @@ export function ContactSection() {
                   >
                     <Github className="h-4 w-4" />
                   </a>
+                  <a
+                    href="https://instagram.com/s_ss_27"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+                    aria-label="GitHub"
+                  >
+                    <Instagram className="h-4 w-4" />
+                  </a>
+                  
                 </div>
               </CardContent>
             </Card>

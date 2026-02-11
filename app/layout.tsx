@@ -17,10 +17,10 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Mohmed Shoban Shaikh | Frontend Developer",
+  title: "Shoban Shaikh - Software Engineer",
   description:
-    "Portfolio of Mohmed Shoban Shaikh - Frontend Developer specializing in React & TypeScript, building scalable web applications.",
-  keywords: ["Frontend Developer", "React", "TypeScript", "Portfolio", "Web Developer"],
+    "Portfolio of Mohmed Shoban Shaikh - Software Developer specializing in building exceptional digital experiences",
+  keywords: ["Frontend Developer", "React", "TypeScript", "Portfolio", "Web Developer", "Node", "Software Engineer", "Next" ],
 }
 
 export const viewport: Viewport = {
