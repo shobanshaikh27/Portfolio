@@ -55,7 +55,7 @@ const techLogos: Record<string, string> = {
   "Cursor":"/cursor_light.svg",
   "Cloudinary":"/cloudinary.svg",
   "Redis":"/redis.svg",
-  "V0":"/V0_light.svg",
+  "V0":"/v0_light.svg",
   "Vercel":"/vercel.svg",
   "Stripe":"/stripe.svg"
 }
