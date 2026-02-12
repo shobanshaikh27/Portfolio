@@ -136,7 +136,7 @@ export function Sidebar({ activeSection }: SidebarProps) {
         <a
           href="mailto:shobanshaikh273@gmail.com"
           rel="noopener noreferrer"
-          className="p-2.5 rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground dark:bg-gray-800/30 dark:hover:bg-primary"
+          className="p-2.5 rounded-lg  bg-white/30 max-md:text-white text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground dark:bg-gray-800/30 dark:hover:bg-primary"
           aria-label="Mail"
         >
           <Mail className="h-4 w-4" />

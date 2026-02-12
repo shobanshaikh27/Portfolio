@@ -21,7 +21,7 @@ const featuredProjects = [
     title: "OnlineKhata",
     description: "Invoicing software with 100k+ users",
     tags: ["React", "GraphQL", "Node.js"],
-    href:"https://onlinekhata.co.in/"
+    href: "https://onlinekhata.co.in/"
   },
 ]
 
@@ -120,29 +120,30 @@ export function HomeSection() {
         </h3>
         <div className="grid gap-4 md:grid-cols-2">
           {featuredProjects.map((project) => (
-           <Link href={project.href} target="_blank"> <Card
-              key={project.title}
-              className="group cursor-pointer border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
-            >
-              <CardContent className="p-5">
-                <div className="flex items-start justify-between">
-                  <div>
-                    <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">
-                      {project.title}
-                    </h4>
-                    <p className="mt-1 text-sm text-muted-foreground">{project.description}</p>
+            <Link href={project.href} target="_blank">
+              <Card
+                key={project.title}
+                className="group cursor-pointer border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
+              >
+                <CardContent className="p-5">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                        {project.title}
+                      </h4>
+                      <p className="mt-1 text-sm text-muted-foreground">{project.description}</p>
+                    </div>
+                    <ExternalLink className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
                   </div>
-                  <ExternalLink className="h-4 w-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
-                </div>
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {project.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="text-xs font-normal">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {project.tags.map((tag) => (
+                      <Badge key={tag} variant="secondary" className="text-xs font-normal">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             </Link>
           ))}
         </div>

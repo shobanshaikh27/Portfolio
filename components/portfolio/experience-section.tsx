@@ -18,7 +18,7 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    titleKey: "experience.frontendDev",
+    titleKey: "experience.softwareDev",
     company: "Vaani Foundation",
     location: "Remote, India",
     period: "May 2024 - Mar 2025",
